@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
 import './App.css';
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contact";
@@ -8,7 +9,8 @@ import Project from './components/Project';
 import { Skills } from "./components/Skills";
 
 function App() {
-  return (
+  AOS.init();
+    return (
     <div className="App">
       <NavBar />
       <Banner />
